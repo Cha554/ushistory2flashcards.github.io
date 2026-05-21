@@ -1,10 +1,16 @@
+Here is the complete, expanded HTML code. This version has been fully updated to include **every single term, act, critic, case, battle, and figure** from your study guide.
+
+The deck is organized into structured dropdown menus so you can study by era or run through all of them together. It features responsive sizing for mobile/tablet study, smooth 3D CSS flipping animations, and full keyboard control (Left/Right arrows to change cards, Spacebar to flip).
+
+Save the code below as a `.html` file (e.g., `US_History_Final.html`) and open it in any web browser to start testing yourself.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>US History Final Exam Flashcards</title>
+    <title>Comprehensive US History Final Flashcards</title>
     <style>
         :root {
             --primary: #1e3a8a;
@@ -55,7 +61,7 @@
             flex-direction: column;
             align-items: center;
             padding: 2rem;
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
             margin: 0 auto;
         }
@@ -92,7 +98,7 @@
         .flashcard-wrapper {
             perspective: 1000px;
             width: 100%;
-            height: 400px;
+            height: 480px;
             margin-bottom: 2rem;
             cursor: pointer;
         }
@@ -117,7 +123,7 @@
             height: 100%;
             backface-visibility: hidden;
             border-radius: 16px;
-            padding: 2.5rem;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             background-color: var(--card-bg);
@@ -133,12 +139,12 @@
         }
 
         .card-front h2 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: var(--primary);
         }
 
         .card-front .hint {
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             font-size: 0.875rem;
             color: var(--text-light);
             text-transform: uppercase;
@@ -226,13 +232,13 @@
                 padding: 1rem;
             }
             .flashcard-wrapper {
-                height: 450px;
+                height: 520px;
             }
             .card-face {
-                padding: 1.5rem;
+                padding: 1.25rem;
             }
             .card-front h2 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
             .card-back li {
                 font-size: 0.95rem;
@@ -243,29 +249,29 @@
 <body>
 
     <header>
-        <h1>U.S. History Final Study Guide</h1>
-        <p>Interactive Flashcards</p>
+        <h1>U.S. History Ultimate Final Study Tool</h1>
+        <p>Interactive Flashcards Covering Every Required Topic</p>
     </header>
 
     <div class="container">
         <div class="menu-container">
-            <label for="unit-select">Choose a Study Unit:</label>
+            <label for="unit-select">Choose Your Target Area:</label>
             <select id="unit-select" onchange="changeUnit()">
-                <option value="all">All Units Combined</option>
-                <option value="twenties">Unit 1: The Roaring Twenties</option>
-                <option value="depression">Unit 2: Great Depression & New Deal</option>
-                <option value="wwii">Unit 3: World War II</option>
-                <option value="coldwar">Unit 4: The Cold War Begins</option>
-                <option value="civilrights">Unit 5: Civil Rights Movement</option>
-                <option value="vietnam">Unit 6: Vietnam War & The 1960s</option>
+                <option value="all">Complete Master Deck (All Topics)</option>
+                <option value="twenties">The Roaring Twenties & Post-WWI</option>
+                <option value="depression">The Great Depression & New Deal</option>
+                <option value="wwii">World War II Era</option>
+                <option value="coldwar">The Cold War Era</option>
+                <option value="civilrights">The Civil Rights Movement</option>
+                <option value="vietnam">The Vietnam War & Watergate</option>
             </select>
         </div>
 
         <div class="flashcard-wrapper" onclick="flipCard()">
             <div class="flashcard" id="card">
                 <div class="card-face card-front">
-                    <h2 id="card-front-text">Loading Card...</h2>
-                    <div class="hint">Click to flip</div>
+                    <h2 id="card-front-text">Loading Card Set...</h2>
+                    <div class="hint">Click or press Space to flip</div>
                 </div>
                 <div class="card-face card-back" id="card-back-text">
                     </div>
@@ -281,326 +287,401 @@
 
     <script>
         const flashcardsData = [
-            // UNIT 1: THE ROARING TWENTIES
+            // --- THE ROARING TWENTIES ---
             {
                 unit: "twenties",
-                front: "Bolshevik Revolution (1917)",
-                back: "<h3>Bolshevik Revolution</h3><ul><li><strong>What/Who:</strong> Overthrow of the Russian Provisional Government by Vladimir Lenin and the radical socialist Bolsheviks.</li><li><strong>Where/When:</strong> Russia, Oct/Nov 1917.</li><li><strong>Why:</strong> Poverty, massive casualties in WWI, food shortages, and anger at Tsarist autocracy.</li><li><strong>Consequences:</strong> Formed world's first communist state (USSR), pulled Russia from WWI, sparked global fear of communism (Red Scare).</li></ul>"
+                front: "Bolshevik Revolution",
+                back: "<h3>Bolshevik Revolution</h3><ul><li><strong>What/Who:</strong> The seizure of state power by Vladimir Lenin and the radical socialist Bolshevik party, overthrowing the Russian Provisional Government.</li><li><strong>Where/When:</strong> Russia; October/November 1917.</li><li><strong>Why:</strong> Massive combat casualties in WWI, food shortages, systemic poverty, and deep hostility toward Tsarist autocracy.</li><li><strong>Consequences:</strong> Established the world's first communist state (Soviet Union), withdrew Russia from WWI, and catalyzed the global panic known as the First Red Scare.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "Consequences of WWI (US vs. Europe)",
-                back: "<h3>Consequences of WWI</h3><ul><li><strong>United States:</strong> Shifted toward isolationism, rejected the League of Nations, experienced an economic boom as a global creditor nation.</li><li><strong>Europe:</strong> Suffered catastrophic loss of life, structural ruin, financial bankruptcy, political instability, and the collapse of four major empires (German, Austro-Hungarian, Russian, Ottoman).</li></ul>"
+                front: "Consequences of WWI: US vs. Europe",
+                back: "<h3>Consequences of WWI</h3><ul><li><strong>United States:</strong> Shifted sharply toward isolationist diplomacy, completely rejected joining the League of Nations, and experienced a massive economic expansion as a global creditor nation.</li><li><strong>Europe:</strong> Suffered catastrophic demographic population loss, physical infrastructure ruin, near total financial collapse, deep civil instability, and the structural breakup of the German, Austro-Hungarian, Russian, and Ottoman empires.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "The First Red Scare (1919–1920)",
-                back: "<h3>The First Red Scare</h3><ul><li><strong>Factors for:</strong> The Bolshevik Revolution, a massive wave of postwar domestic labor strikes, and a series of anarchist mail bombings.</li><li><strong>Consequences:</strong> Widespread nativism, the Palmer Raids (illegal arrests/deportations of radicals), the Sacco and Vanzetti trial, and restrictive 1920s immigration quotas.</li></ul>"
+                front: "Factors for & Consequences of the Red Scare",
+                back: "<h3>The First Red Scare</h3><ul><li><strong>Factors for:</strong> The Bolshevik Revolution, an aggressive wave of domestic postwar labor strikes, and coordinated anarchist mail-bombing campaigns.</li><li><strong>Consequences:</strong> Pervasive nativism, the Palmer Raids (unwarranted searches and deportations of radicals), the execution of Sacco and Vanzetti, and strict statutory immigration caps.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "The New Ku Klux Klan (1920s)",
-                back: "<h3>The New Ku Klux Klan</h3><ul><li><strong>Who/What/Where:</strong> Revived national version of the Reconstruction hate group, expanding heavily into Midwest and Western states.</li><li><strong>Why/How:</strong> Fueled by modern public relations, nativism, anti-Catholicism, anti-Semitism, and backlash to rapid urbanization/immigration.</li><li><strong>Consequences:</strong> Peaked at 4-5 million members before collapsing in the late 1920s due to leadership corruption and scandals.</li></ul>"
+                front: "The New Ku Klux Klan",
+                back: "<h3>The New Ku Klux Klan</h3><ul><li><strong>Who/What:</strong> A reinvented version of the Reconstruction-era hate group, expanding nationwide into midwestern and western states.</li><li><strong>Where/When/Why:</strong> Founded in Georgia (1915), peaked in the 1920s; targeted Black people, immigrants, Catholics, and Jews using modern PR and nativist anxiety.</li><li><strong>Consequences:</strong> Grew to millions of members, seized deep state political power, then imploded due to leadership embezzlement and sex scandals.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "1919 Race Riots (The Red Summer)",
-                back: "<h3>1919 Race Riots</h3><ul><li><strong>What/Where:</strong> Violent racial conflicts breaking out in over three dozen US cities (notably Chicago, Tulsa, Washington D.C.).</li><li><strong>Why:</strong> White resentment over Black economic advancement, fierce competition for industrial jobs, and housing shortages after the Great Migration.</li><li><strong>Consequences:</strong> Hundreds of deaths, massive property destruction, and a newfound militancy among Black Americans defending their communities.</li></ul>"
+                front: "Race Riots (1919 / Red Summer)",
+                back: "<h3>Race Riots</h3><ul><li><strong>Who/What:</strong> Violent white mobs attacking African American communities across dozens of US cities, notably Chicago, Tulsa, and Washington D.C.</li><li><strong>When/Why:</strong> 1919–1921. Fueled by white resentment over Black economic progress, job competition, and housing shortages after the Great Migration.</li><li><strong>Consequences:</strong> Hundreds of Black civilian deaths, the complete destruction of prosperous districts (e.g., Greenwood in Tulsa), and a rise in self-defense activism.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "Prohibition (18th Amendment & Volstead Act)",
-                back: "<h3>Prohibition</h3><ul><li><strong>What/When/Why:</strong> Nationwide ban on the manufacture, sale, and transport of intoxicating liquors (1920–1933). Driven by temperance movements trying to reduce crime and poverty.</li><li><strong>How/Consequences:</strong> Poorly enforced due to underfunded agents. Spawned massive illegal markets (bootlegging, speakeasies) and organized crime syndicates. Repealed by the 21st Amendment.</li></ul>"
+                front: "Prohibition",
+                back: "<h3>Prohibition</h3><ul><li><strong>What/When:</strong> The national constitutional ban on manufacturing, selling, or transporting intoxicating liquors under the 18th Amendment and Volstead Act (1920–1933).</li><li><strong>Why/How:</strong> Pushed by temperance coalitions to improve public morals, reduce domestic abuse, and curtail political corruption.</li><li><strong>Consequences:</strong> Massive lack of compliance, the explosion of speakeasies and bootlegging operations, and deep corruption of law enforcement, ending with the 21st Amendment repeal.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "Organized Crime in the 1920s",
-                back: "<h3>Organized Crime</h3><ul><li><strong>Who/What:</strong> Gangsters like Al Capone who violently cornered the illegal alcohol market.</li><li><strong>Why/Consequences:</strong> Prohibition turned a massive public demand into a lucrative black market. Led to deadly gang turf wars, deep systemic police/political corruption, and the rise of modern syndicated networks.</li></ul>"
+                front: "Organized Crime",
+                back: "<h3>Organized Crime</h3><ul><li><strong>Who/What:</strong> Gangster syndicates, epitomized by figures like Al Capone, who militarized illegal alcohol distribution networks.</li><li><strong>Why/Consequences:</strong> Prohibition opened up a lucrative black market. This led to street combat (e.g., St. Valentine's Day Massacre), systemic bribery of city officials, and the institutionalization of modern mob syndicates.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "Education Reform in the 1920s",
-                back: "<h3>Education Reform</h3><ul><li><strong>What/Why:</strong> High school enrollment doubled as states passed mandatory attendance laws and the modern economy demanded white-collar, technical skills.</li><li><strong>Consequences:</strong> Fostered a distinct youth culture and sparked cultural clashes between modern science and traditional religion, epitomized by the <strong>1925 Scopes \"Monkey\" Trial</strong>.</li></ul>"
+                front: "Education Reform",
+                back: "<h3>Education Reform</h3><ul><li><strong>Who/What/Why:</strong> Progressive reformers expanded mandatory school attendance laws, causing high school enrollment to jump sharply to meet the demands of a complex industrial market.</li><li><strong>Consequences:</strong> Solidified a distinct teen youth culture, altered curriculum toward modern science, and provoked a conservative fundamentalist backlash seen in the **1925 Scopes Trial** over evolution.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "1920s Economic Expansion",
-                back: "<h3>1920s Economic Expansion</h3><ul><li><strong>Factors for:</strong> Henry Ford's assembly line, mass industrial production, widespread electrification, cheap energy, and consumer credit (installment plans).</li><li><strong>Consequences:</strong> Surging standard of living, massive urbanization, a booming stock market, and dangerous accumulation of personal consumer debt.</li></ul>"
+                front: "Economic Expansion (Factors & Consequences)",
+                back: "<h3>1920s Economic Expansion</h3><ul><li><strong>Factors for:</strong> Widespread implementation of Henry Ford's assembly line, mass electrification, cheap fossil fuels, and the introduction of installment consumer credit.</li><li><strong>Consequences:</strong> Unprecedented production levels, urban expansion, booming stock markets, and a dangerous structural vulnerability to consumer over-indebtedness.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "1920s Advertising",
-                back: "<h3>1920s Advertising</h3><ul><li><strong>Factors for:</strong> Industrial mass production required mass consumption. Agencies turned to psychology to manipulate consumer desires rather than just listing product utilities.</li><li><strong>Consequences:</strong> Created a standardized, shared national consumer culture, popularized modern brand names, and normalized buying luxuries on credit.</li></ul>"
+                front: "Advertising (Factors & Consequences)",
+                back: "<h3>Advertising</h3><ul><li><strong>Factors for:</strong> Mass production outpaced natural demand. Advertising firms applied psychological techniques to manipulate desires, making products status symbols.</li><li><strong>Consequences:</strong> Shifted American values toward a shared national consumer culture, prioritized mass brand loyalty, and heavily incentivized buying on credit.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "1920s Entertainment (Sports, Lindbergh, Radio, Movies)",
-                back: "<h3>1920s Entertainment</h3><ul><li><strong>Sports:</strong> Icons like Babe Ruth and Jack Dempsey achieved national fame via increased public leisure time.</li><li><strong>Charles Lindbergh:</strong> Flew solo nonstop across the Atlantic (1927), symbolizing heroic modern progress.</li><li><strong>Radio:</strong> Stations like KDKA unified national culture through synchronized news/entertainment.</li><li><strong>Movies:</strong> Transitioned to \"talkies\" (*The Jazz Singer*, 1927), birthing the Hollywood celebrity system.</li></ul>"
+                front: "Entertainment: Sports, Leisure, Radio, & Motion Pictures",
+                back: "<h3>Entertainment Expansion</h3><ul><li><strong>Sports:</strong> Shorter industrial hours gave rise to spectator icons like Babe Ruth.</li><li><strong>Radio:</strong> Outlets like KDKA created mass simultaneous programming, standardizing cultural trends.</li><li><strong>Motion Pictures:</strong> Transformed from silent pieces to "talkies" (*The Jazz Singer*, 1927), creating the Hollywood celebrity market.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "Women in the 1920s",
-                back: "<h3>Women in the 1920s</h3><ul><li><strong>Gains:</strong> Earned suffrage via the 19th Amendment (1920); the \"Flapper\" icon challenged rigid social constraints; expansion of clerical/white-collar job opportunities.</li><li><strong>Losses/Issues:</strong> Pervasive wage discrimination; the Equal Rights Amendment (ERA) failed; the vast majority of women remained trapped in low-paying domestic or manufacturing fields.</li></ul>"
+                front: "Charles Lindbergh",
+                back: "<h3>Charles Lindbergh</h3><ul><li><strong>Who:</strong> An American aviator who completed the first solo, nonstop transatlantic flight from New York to Paris in 1927 aboard the *Spirit of St. Louis*.</li><li><strong>Significance:</strong> Became an overnight international celebrity, bridging traditional pioneer grit with advanced machine technology, and heavily accelerated global commercial aviation.</li></ul>"
             },
             {
                 unit: "twenties",
-                front: "The Harlem Renaissance",
-                back: "<h3>The Harlem Renaissance</h3><ul><li><strong>What/Where:</strong> An explosion of African American literary, artistic, and musical creativity centered in Harlem, New York during the 1920s.</li><li><strong>Who:</strong> Figures like Langston Hughes, Zora Neale Hurston, Duke Ellington, and Louis Armstrong.</li><li><strong>Consequences:</strong> Redefined how the world perceived Black culture, nurtured deep racial pride, and formed the cultural roots of the modern Civil Rights Movement.</li></ul>"
+                front: "Women in the 1920s (Issues, Gains, Losses)",
+                back: "<h3>Women in the 1920s</h3><ul><li><strong>Gains:</strong> Achieved national voting rights via the 19th Amendment (1920); the social liberation of the "Flapper"; increased access to white-collar clerical roles.</li><li><strong>Losses/Issues:</strong> Sustained severe wage disparities; the Equal Rights Amendment (ERA) failed to pass; the vast majority of women faced ongoing domestic and occupational glass ceilings.</li></ul>"
+            },
+            {
+                unit: "twenties",
+                front: "Harlem Renaissance",
+                back: "<h3>Harlem Renaissance</h3><ul><li><strong>Who/What/Where:</strong> An explosion of Black intellectual, literary, musical, and artistic expression centered in Harlem, New York during the 1920s.</li><li><strong>Figures:</strong> Langston Hughes, Zora Neale Hurston, Duke Ellington, Louis Armstrong.</li><li><strong>Why/Consequences:</strong> Driven by the Great Migration; broke down racial caricatures, cultivated deep ethnic pride, and built the cultural foundations for civil rights activism.</li></ul>"
             },
 
-            // UNIT 2: THE GREAT DEPRESSION & THE NEW DEAL
+            // --- THE GREAT DEPRESSION ---
             {
                 unit: "depression",
-                front: "Factors for the Great Depression",
-                back: "<h3>Factors for the Great Depression</h3><ul><li><strong>1.</strong> Industrial overproduction paired with agricultural underconsumption.</li><li><strong>2.</strong> Massive, unequal distribution of wealth.</li><li><strong>3.</strong> Protectionist tariffs (Hawley-Smoot) crippling global trade.</li><li><strong>4.</strong> Pervasive stock market speculation and buying stocks on margin.</li><li><strong>5.</strong> The catastrophic Stock Market Crash of October 29, 1929 (\"Black Tuesday\").</li></ul>"
+                front: "All Factors for the Great Depression",
+                back: "<h3>Causes of the Great Depression</h3><ul><li><strong>1. Industrial Overproduction:</strong> Output surpassed consumer capacity.</li><li><strong>2. Agricultural Crisis:</strong> Post-WWI crop prices collapsed, ruining farmers.</li><li><strong>3. Income Inequality:</strong> The bottom 80% lacked purchasing power.</li><li><strong>4. Tariff Policy:</strong> Hawley-Smoot Tariff destroyed international trade.</li><li><strong>5. Banking Weakness:</strong> Unregulated stock speculation and margin buying led to the 1929 Crash and bank runs.</li></ul>"
             },
             {
                 unit: "depression",
-                front: "President Herbert Hoover’s Response",
-                back: "<h3>Hoover's Response</h3><ul><li><strong>Philosophy:</strong> Strong belief in \"rugged individualism\" and voluntary local cooperation; strictly opposed direct federal welfare/doles to individuals.</li><li><strong>Actions:</strong> Set up the Reconstruction Finance Corporation (RFC) to loan funds to banks/businesses, but it was too little, too late. Public morale broke, mocking shantytowns as \"Hoovervilles.\"</li></ul>"
+                front: "Hoover's Response to the Great Depression",
+                back: "<h3>Herbert Hoover's Approach</h3><ul><li><strong>Philosophy:</strong> Committed to "rugged individualism" and voluntary corporate cooperation; opposed direct federal relief (welfare/doles) to individuals.</li><li><strong>Actions:</strong> Established the Reconstruction Finance Corporation (RFC) to loan funds to corporations and banks, but it was too little, too late. Public opinion collapsed, naming shantytowns "Hoovervilles."</li></ul>"
             },
             {
                 unit: "depression",
-                front: "The Bonus Army (1932)",
-                back: "<h3>The Bonus Army</h3><ul><li><strong>What:</strong> Over 15,000 unemployed WWI veterans marched on Washington D.C. demanding immediate payment of promised service bonuses.</li><li><strong>Outcome:</strong> Hoover deployed the US Army (under Douglas MacArthur) to clear out their camps with tanks and tear gas, cementing Hoover's defeat in the upcoming election.</li></ul>"
+                front: "The Bonus Army",
+                back: "<h3>The Bonus Army (1932)</h3><ul><li><strong>What:</strong> An assembly of over 15,000 unemployed WWI veterans who marched to Washington D.C. to demand immediate payout of their promised service certificates.</li><li><strong>Outcome:</strong> Hoover deployed federal troops under General Douglas MacArthur, who cleared out the veterans' camp using tear gas and tanks. This created a public relations disaster for Hoover right before the election.</li></ul>"
             },
             {
                 unit: "depression",
-                front: "Presidential Elections of 1928 & 1932",
-                back: "<h3>Elections of 1928 & 1932</h3><ul><li><strong>1928:</strong> Republican Herbert Hoover soundly defeated Democrat Al Smith, capitalizing on 1920s economic optimism.</li><li><strong>1932:</strong> Democrat Franklin D. Roosevelt (FDR) crushed Hoover in a historic landslide, promising a comprehensive \"New Deal.\"</li></ul>"
+                front: "Elections of 1928 & 1932",
+                back: "<h3>Elections of 1928 & 1932</h3><ul><li><strong>Election of 1928:</strong> Republican Herbert Hoover defeated Democrat Al Smith, winning on a wave of 1920s prosperity.</li><li><strong>Election of 1932:</strong> Democrat Franklin D. Roosevelt won a landslide victory over Hoover by offering structural intervention, known as the "New Deal."</li></ul>"
             },
             {
                 unit: "depression",
-                front: "The Hundred Days & The 3 Rs",
-                back: "<h3>The Hundred Days & 3 Rs</h3><ul><li><strong>The Hundred Days:</strong> Unprecedented burst of legislation immediately following FDR's inauguration, passing 15 major landmark bills.</li><li><strong>Relief:</strong> Direct, immediate aid to the starving/unemployed (e.g., FERA, CCC).</li><li><strong>Recovery:</strong> Programs aimed at reviving damaged businesses and agriculture (e.g., AAA, NIRA).</li><li><strong>Reform:</strong> Structural changes to fix flaws and prevent future crashes (e.g., FDIC, SEC).</li></ul>"
+                front: "The Hundred Days & Relief, Recovery, Reform",
+                back: "<h3>The Hundred Days</h3><ul><li><strong>Definition:</strong> The foundational phase of FDR's administration where Congress passed 15 major pieces of legislation to stabilize the economy.</li><li><strong>Relief:</strong> Direct assistance for immediate survival (FERA, CCC).</li><li><strong>Recovery:</strong> Temporary programs to restart production lines (AAA, NIRA).</li><li><strong>Reform:</strong> Permanent structural adjustments to prevent future depressions (FDIC, SEC, Social Security).</li></ul>"
             },
             {
                 unit: "depression",
                 front: "Fireside Chats",
-                back: "<h3>Fireside Chats</h3><ul><li><strong>What:</strong> Informal, direct radio broadcasts made by FDR to the American public.</li><li><strong>Significance:</strong> Used plain language to demystify complex economic policies, calming panics and restoring trust while successfully bypassing a critical press.</li></ul>"
+                back: "<h3>Fireside Chats</h3><ul><li><strong>What:</strong> Regular, direct radio addresses delivered by FDR to the American public.</li><li><strong>Significance:</strong> Explained complex banking and regulatory legislation in simple terms, restored confidence, and built a personal connection with voters that helped him bypass a critical press.</li></ul>"
             },
             {
                 unit: "depression",
-                front: "Emergency Banking Relief & Glass-Steagall Acts",
-                back: "<h3>Banking Reform</h3><ul><li><strong>Emergency Banking Relief Act:</strong> Passed during the government \"Bank Holiday\"; permitted federal inspectors to reopen only stable, solvent financial institutions.</li><li><strong>Glass-Steagall Act:</strong> Strictly separated low-risk commercial banking from speculative investment banking, and founded the <strong>FDIC</strong> to guarantee personal bank deposits.</li></ul>"
+                front: "Emergency Banking Relief Act & Glass-Steagall Act",
+                back: "<h3>Banking Legislation</h3><ul><li><strong>Emergency Banking Relief Act (1933):</strong> Instituted a federal Bank Holiday, permitting the government to evaluate and reopen only healthy financial institutions.</li><li><strong>Glass-Steagall Act (1933):</strong> Permanently separated low-risk commercial banking from speculative investment firms, and founded the **FDIC** to insure individual deposits.</li></ul>"
             },
             {
                 unit: "depression",
-                front: "New Deal Relief: CCC, CWA, FERA, WPA",
-                back: "<h3>Employment & Relief Programs</h3><ul><li><strong>CCC:</strong> Employed young men in environmental conservation (parks, trees).</li><li><strong>CWA:</strong> Formed quick, short-term manual labor infrastructure jobs during the 1933–34 winter.</li><li><strong>FERA:</strong> Disbursed direct federal cash grants to states for immediate unemployment relief.</li><li><strong>WPA:</strong> Huge Second New Deal agency employing millions in public infrastructure and the arts.</li></ul>"
+                front: "New Deal Agencies: CCC & CWA",
+                back: "<h3>CCC & CWA</h3><ul><li><strong>CCC (Civilian Conservation Corps):</strong> A relief program that employed young men in environmental projects like planting trees, building trail networks, and fighting forest fires.</li><li><strong>CWA (Civil Works Administration):</strong> A short-term program during the winter of 1933–34 that created manual labor jobs building roads and schools.</li></ul>"
             },
             {
                 unit: "depression",
-                front: "New Deal Programs: AAA, NIRA, TVA, Wagner, Social Security",
-                back: "<h3>Landmark New Deal Agencies</h3><ul><li><strong>AAA:</strong> Subsidized farmers to reduce crop production to raise deflated market prices.</li><li><strong>NIRA:</strong> Set industry codes and fair prices; later ruled unconstitutional by Supreme Court.</li><li><strong>TVA:</strong> Built dams to control floods and bring cheap electricity to the impoverished Tennessee Valley.</li><li><strong>Wagner Act:</strong> Legalized and protected unions' rights to organize and collectively bargain.</li><li><strong>Social Security Act (1935):</strong> Established old-age pensions, unemployment insurance, and aid for disabled citizens.</li></ul>"
+                front: "New Deal Agencies: FERA & WPA",
+                back: "<h3>FERA & WPA</h3><ul><li><strong>FERA (Federal Emergency Relief Administration):</strong> Distributed direct cash grants to state agencies to provide immediate relief to unemployed families.</li><li><strong>WPA (Works Progress Administration):</strong> The largest Second New Deal program; hired millions of people to build public infrastructure, and funded projects for artists, writers, and actors.</li></ul>"
+            },
+            {
+                unit: "depression",
+                front: "New Deal Agencies: AAA & Wagner Act",
+                back: "<h3>AAA & Wagner Act</h3><ul><li><strong>AAA (Agricultural Adjustment Act):</strong> Paid subsidies to farmers to reduce crop and livestock production. This artificial scarcity helped raise deflated agricultural prices.</li><li><strong>Wagner Act (1935):</strong> Formally protected labor unions' rights to organize and bargain collectively, and established the National Labor Relations Board (NLRB).</li></ul>"
+            },
+            {
+                unit: "depression",
+                front: "New Deal Agencies: TVA & Social Security Act",
+                back: "<h3>TVA & Social Security Act</h3><ul><li><strong>TVA (Tennessee Valley Authority):</strong> Built a network of dams to control chronic flooding, generate cheap electricity, and modernize the impoverished Tennessee Valley region.</li><li><strong>Social Security Act (1935):</strong> Established a permanent social safety net, providing old-age pensions, unemployment insurance, and direct aid for disabled citizens.</li></ul>"
+            },
+            {
+                unit: "depression",
+                front: "New Deal Agencies: NIRA",
+                back: "<h3>NIRA (National Industrial Recovery Act)</h3><ul><li><strong>What:</strong> A recovery program that established the National Recovery Administration (NRA) to set industry codes, production limits, and minimum wages.</li><li><strong>Outcome:</strong> It was controversial and was eventually declared unconstitutional by the Supreme Court in *Schechter Poultry v. US* for overstepping federal interstate commerce powers.</li></ul>"
             },
             {
                 unit: "depression",
                 front: "Critics of the Roosevelt Administration",
-                back: "<h3>New Deal Critics</h3><ul><li><strong>From the Right (Conservatives):</strong> Accused FDR of stepping toward socialism, reckless deficit spending, and dictatorial executive expansion (e.g., his \"Court-Packing\" scheme).</li><li><strong>From the Left (Demagogues):</strong> <ul><li><em>Huey Long:</em> Proposed \"Share Our Wealth\" redistribution caps.</li><li><em>Father Charles Coughlin:</em> Radio priest wanting nationalized banks.</li><li><em>Dr. Francis Townsend:</em> Demanded $200/mo senior pensions.</li></ul></li></ul>"
+                back: "<h3>Critics of FDR</h3><ul><li><strong>The Conservative Right:</strong> Accused FDR of dynamic over-regulation, moving toward socialism, and overstepping executive powers (especially during his 1937 Court-Packing plan).</li><li><strong>The Left / Demagogues:</strong> <ul><li><em>Huey Long:</em> Outlined the "Share Our Wealth" program to cap personal wealth and redistribute it.</li><li><em>Father Charles Coughlin:</em> A radio priest who demanded the nationalization of the banking system.</li><li><em>Dr. Francis Townsend:</em> Advocated for a mandatory monthly pension plan for seniors.</li></ul></li></ul>"
             },
             {
                 unit: "depression",
                 front: "Factors for the End of the New Deal",
-                back: "<h3>End of the New Deal</h3><ul><li><strong>1.</strong> The \"Roosevelt Recession\" of 1937, caused by premature reductions in federal relief spending.</li><li><strong>2.</strong> Heavy political backlash against the heavy-handed Court-Packing plan.</li><li><strong>3.</strong> A rising conservative coalition of Republicans and Southern Democrats blocking domestic bills after 1938.</li><li><strong>4.</strong> FDR diverting his focus to international fascist aggression in Europe and Asia.</li></ul>"
+                back: "<h3>End of the New Deal</h3><ul><li><strong>1. The Roosevelt Recession (1937):</strong> A sudden economic downturn triggered when the administration prematurely cut relief spending.</li><li><strong>2. Court-Packing Backlash:</strong> FDR's proposal to add more justices to the Supreme Court alienated moderate Democrats.</li><li><strong>3. Conservative Coalition:</strong> Republicans and Southern Democrats blocked new domestic legislation after 1938.</li><li><strong>4. Foreign Policy Shift:</strong> Aggression in Europe and Asia forced FDR to reallocate federal resources toward defense.</li></ul>"
             },
 
-            // UNIT 3: WORLD WAR II
+            // --- WORLD WAR II ---
             {
                 unit: "wwii",
-                front: "Factors for WWII: Versailles & The Great Depression",
-                back: "<h3>Long-term Causes of WWII</h3><ul><li><strong>Treaty of Versailles:</strong> Punished Germany with heavy reparations, war guilt, and territorial loss, triggering intense national humiliation and a thirst for revenge.</li><li><strong>Great Depression:</strong> Brought global economic ruin, crashing weak democracies and opening doors for totalitarian militarists to seize absolute power.</li></ul>"
+                front: "Factors for WWII: Treaty of Versailles & Great Depression",
+                back: "<h3>Origins of WWII</h3><ul><li><strong>Treaty of Versailles:</strong> Imposed severe war reparations, territorial losses, and a war guilt clause on Germany, fueling national humiliation and economic instability.</li><li><strong>Great Depression:</strong> Caused a worldwide economic collapse that destabilized young democracies and paved the way for totalitarian regimes to seize power.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "Totalitarian Ideologies: Fascism, Nazism, Communism",
-                back: "<h3>Totalitarian Ideologies</h3><ul><li><strong>Fascism:</strong> Radical, aggressive nationalism prioritizing total obedience to the state and absolute dictatorial authority.</li><li><strong>Nazism:</strong> A racially motivated form of German fascism centered on Aryan supremacy and violent anti-Semitism.</li><li><strong>Communism:</strong> State-controlled command economy aiming for a classless collective, enforcing total state control over public and private life.</li></ul>"
+                front: "Totalitarian Ideologies: Fascism, Nazism, & Communism",
+                back: "<h3>Totalitarian Ideologies</h3><ul><li><strong>Fascism:</strong> A radical, nationalistic philosophy that places the state above the individual and is led by a dictatorial regime.</li><li><strong>Nazism:</strong> A form of fascism unique to Germany, centered on racial purity, Aryan supremacy, and state-sponsored anti-Semitism.</li><li><strong>Communism:</strong> A system with a state-controlled command economy, aimed at a classless system through complete government control over public and private life.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "Key World Leaders of WWII",
-                back: "<h3>Key Leaders</h3><ul><li><strong>Joseph Stalin:</strong> Totalitarian dictator of the Soviet Union (USSR).</li><li><strong>Benito Mussolini:</strong> Fascist dictator of Italy.</li><li><strong>Hideki Tojo / Emperor Hirohito:</strong> Militant PM / Imperial Monarch of Japan.</li><li><strong>FDR:</strong> US President through the Depression and most of the war.</li><li><strong>Winston Churchill:</strong> Defiant Prime Minister of Great Britain.</li><li><strong>Dwight D. Eisenhower:</strong> Supreme Allied Commander in Europe.</li></ul>"
+                front: "Key Allied and Axis Leaders",
+                back: "<h3>WWII Leadership</h3><ul><li><strong>Joseph Stalin:</strong> Totalitarian Premier of the Soviet Union (USSR).</li><li><strong>Benito Mussolini:</strong> Fascist Il Duce of Italy.</li><li><strong>Hideki Tojo:</strong> General and Prime Minister of Imperial Japan.</li><li><strong>Emperor Hirohito:</strong> Sovereign Monarch of Imperial Japan.</li><li><strong>FDR / Winston Churchill:</strong> Leaders of the US and Great Britain.</li><li><strong>Dwight D. Eisenhower:</strong> Supreme Commander of Allied Forces in Europe.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "The Road to War: Manchuria & Fascist Aggression",
-                back: "<h3>Fascist Expansion</h3><ul><li><strong>Invasion of Manchuria (1931):</strong> Imperial Japan invaded northern China, revealing the absolute weakness of the League of Nations.</li><li><strong>Italian Aggression:</strong> Mussolini invaded and conquered Ethiopia (1935).</li><li><strong>German Aggression:</strong> Hitler remilitarized the Rhineland (1936), enacted the <strong>Anschluss</strong> (annexed Austria, 1938), and demanded Czech land.</li></ul>"
+                front: "Japanese Invasion of Manchuria",
+                back: "<h3>Invasion of Manchuria (1931)</h3><ul><li><strong>What:</strong> Imperial Japan launched an unauthorized military invasion of northeastern China.</li><li><strong>Significance:</strong> This aggressive expansion exposed the structural weakness of the League of Nations, which failed to enforce collective security and effectively allowed the expansion to continue unchecked.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "The Munich Pact & Appeasement",
-                back: "<h3>Appeasement & Munich</h3><ul><li><strong>The Munich Pact (1938):</strong> Britain and France permitted Germany to annex the Czechoslovakian Sudetenland in exchange for a promise of peace.</li><li><strong>Appeasement:</strong> The failed policy of yielding to an aggressor's demands to avoid war. It failed completely when Hitler seized the rest of Czechoslovakia and invaded Poland in Sept 1939.</li></ul>"
+                front: "The Road to War: German & Italian Aggression",
+                back: "<h3>Fascist Expansionism</h3><ul><li><strong>Italian Aggression:</strong> Mussolini invaded and conquered Ethiopia in 1935.</li><li><strong>German Aggression:</strong> Hitler openly violated the Versailles Treaty by remilitarizing the Rhineland (1936), executing the **Anschluss** (annexation of Austria, 1938), and invading Czechoslovakia.</li></ul>"
+            },
+            {
+                unit: "wwii",
+                front: "The Munich Pact & Policy of Appeasement",
+                back: "<h3>Appeasement</h3><ul><li><strong>Munich Pact (1938):</strong> An agreement where Britain and France allowed Germany to annex the Sudetenland in exchange for a promise of no further expansion.</li><li><strong>Appeasement:</strong> The policy of making concessions to dictatorial powers to avoid war. It failed completely when Hitler seized the rest of Czechoslovakia and invaded Poland in September 1939.</li></ul>"
             },
             {
                 unit: "wwii",
                 front: "Kristallnacht & The Holocaust",
-                back: "<h3>The Holocaust</h3><ul><li><strong>Kristallnacht (1938):</strong> State-coordinated violent pogrom destroying thousands of Jewish businesses, homes, and synagogues across Germany.</li><li><strong>The Holocaust:</strong> The systematic, state-sponsored bureaucratic murder of 6 million Jews and millions of others (Romani, political rivals, disabled) via Nazi Germany's horrific \"Final Solution.\"</li></ul>"
+                back: "<h3>Kristallnacht & The Holocaust</h3><ul><li><strong>Kristallnacht (1938):</strong> The "Night of Broken Glass," a state-sponsored wave of violence against Jewish homes, businesses, and synagogues across Germany.</li><li><strong>The Holocaust:</strong> The systematic, state-sponsored murder of 6 million Jews and millions of others (Romani, disabled, political dissidents) by the Nazi regime through the "Final Solution."</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "US Shifts Neutrality: Cash and Carry to Lend-Lease",
-                back: "<h3>US Foreign Policy Shift</h3><ul><li><strong>Cash and Carry (1939):</strong> Allowed nations at war to buy US weapons only if they paid cash up front and transported them on their own vessels.</li><li><strong>Lend-Lease Act (1941):</strong> Allowed the US to ship war materials to any country vital to American defense (primarily Britain/USSR), effectively ending true US neutrality.</li></ul>"
+                front: "Cash and Carry",
+                back: "<h3>Cash and Carry (1939)</h3><ul><li><strong>What:</strong> A provision in the US Neutrality Acts that allowed warring nations to purchase military supplies from the US if they paid cash up front and transported the goods on their own ships.</li><li><strong>Significance:</strong> Allowed the US to provide limited aid to Britain and France while technically keeping America out of direct conflict.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "Significant Battles: Stalingrad, D-Day, Midway",
-                back: "<h3>Turning Points of WWII</h3><ul><li><strong>Stalingrad (1942-43):</strong> Decisive eastern turning point; Soviet forces broke and routed the German army, initiating a push back west.</li><li><strong>D-Day (June 6, 1944):</strong> Allied invasion of Normandy, France, successfully forcing a major Western Front against Germany.</li><li><strong>Midway (1942):</strong> Pacific turning point; US codebreakers intercepted plans, allowing US forces to sink 4 Japanese aircraft carriers.</li></ul>"
+                front: "Significant Battles: Europe and the Pacific",
+                back: "<h3>Major Battles</h3><ul><li><strong>Midway (1942):</strong> A turning point in the Pacific; US forces intercepted Japanese plans and destroyed four Japanese aircraft carriers.</li><li><strong>Stalingrad (1942–43):</strong> A turning point in Europe; the Soviet victory shattered the German advance into Russia.</li><li><strong>D-Day (June 6, 1944):</strong> The Allied amphibious invasion of Normandy, France, which opened the Western Front against Nazi Germany.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "Leapfrogging Strategy & Atomic Weapons",
-                back: "<h3>Winning the Pacific</h3><ul><li><strong>Leapfrogging (Island Hopping):</strong> Bypassing heavily fortified Japanese strongholds to capture weaker strategic islands, building airfields closer to mainland Japan.</li><li><strong>Atomic Weapons:</strong> Created by the secret <strong>Manhattan Project</strong>. President Truman ordered drops on Hiroshima (Aug 6, 1945) and Nagasaki (Aug 9, 1945) to force quick surrender and avoid a catastrophic ground invasion.</li></ul>"
+                front: "Leapfrogging & Atomic Weapons",
+                back: "<h3>Pacific Strategy & V-J Day</h3><ul><li><strong>Leapfrogging (Island Hopping):</strong> The strategy of bypassing heavily fortified Japanese islands to capture weaker, strategic islands. This allowed the Allies to build airfields closer to mainland Japan.</li><li><strong>Atomic Weapons:</strong> Developed by the secret **Manhattan Project**. President Truman ordered their deployment on Hiroshima and Nagasaki in August 1945 to bring an immediate end to the war.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "Japanese Internment (Executive Order 9066)",
-                back: "<h3>Japanese Internment</h3><ul><li><strong>What:</strong> Forced relocation and incarceration of over 120,000 individuals of Japanese descent (mostly American citizens) into remote inland camps.</li><li><strong>Why:</strong> War hysteria, racial prejudice, and unsubstantiated fears of domestic espionage after Pearl Harbor. Explicitly upheld by the Supreme Court in *Korematsu v. United States*.</li></ul>"
+                front: "Japanese Internment Camps",
+                back: "<h3>Japanese Internment</h3><ul><li><strong>What:</strong> The forced relocation and internment of over 120,000 people of Japanese ancestry (most of whom were US citizens) to inland detention camps under Executive Order 9066.</li><li><strong>Why:</strong> Driven by wartime panic, racism, and unsubstantiated fears of domestic sabotage. The policy was explicitly upheld by the Supreme Court in *Korematsu v. United States*.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "The Homefront Economy: WPB & OPA",
-                back: "<h3>The Homefront Wartime Government</h3><ul><li><strong>War Production Board (WPB):</strong> Regulated and directed industry conversion from consumer goods to war munitions (e.g., auto plants making tanks).</li><li><strong>Office of Price Administration (OPA):</strong> Fought inflation by freezing retail prices, tracking rents, and enacting mandatory rationing for goods like gasoline, meat, and sugar.</li></ul>"
+                front: "US Economy: War Production Board & Office of Price Administration",
+                back: "<h3>The Wartime Command Economy</h3><ul><li><strong>War Production Board (WPB):</strong> Managed the conversion of civilian factories into war production facilities (e.g., auto plants shifting to build tanks).</li><li><strong>Office of Price Administration (OPA):</strong> Controlled inflation by freezing prices and rents, and managed the mandatory rationing of consumer goods like meat, sugar, and gasoline.</li></ul>"
             },
             {
                 unit: "wwii",
-                front: "Women & Minorities in WWII",
-                back: "<h3>Social Impact of WWII</h3><ul><li><strong>Women:</strong> Entered industrial defense jobs en masse (\"Rosie the Riveter\") and supported military roles in non-combat corps (WACs, WASPs).</li><li><strong>African Americans:</strong> Fought in segregated units, launching the \"Double V\" campaign (victory over fascism abroad, victory over racism at home).</li><li><strong>Native Americans:</strong> Navajo Code Talkers created an unbreakable communication code used across the Pacific.</li></ul>"
+                front: "Role of Women & Minority Populations in WWII",
+                back: "<h3>Social Mobilization</h3><ul><li><strong>Women:</strong> Millions entered the defense industry workforce ("Rosie the Riveter") and served in non-combat military corps like the WACs and WASPs.</li><li><strong>Minorities:</strong> <ul><li><em>African Americans:</em> Served in segregated units and launched the "Double V" campaign against fascism abroad and racism at home.</li><li><em>Native Americans:</em> Navajo Code Talkers created an unbreakable communication code for the Pacific theater.</li></ul></li></ul>"
             },
 
-            // UNIT 4: THE COLD WAR BEGINS
+            // --- THE COLD WAR BEGINS ---
             {
                 unit: "coldwar",
-                front: "The GI Bill & The Election of 1948",
-                back: "<h3>Postwar America</h3><ul><li><strong>GI Bill (1944):</strong> Provided returning veterans tuition for college, low-interest mortgages, and unemployment benefits, driving the massive postwar middle-class boom.</li><li><strong>Election of 1948:</strong> Harry Truman defied pollsters to pull off a stunning upset victory over Thomas Dewey despite the Democratic party splitting into \"Dixiecrats\" and Progressives.</li></ul>"
+                front: "The GI Bill",
+                back: "<h3>The GI Bill (1944)</h3><ul><li><strong>What:</strong> The Servicemen's Readjustment Act, which provided returning veterans with low-interest mortgages, small business loans, and tuition coverage for high school or college.</li><li><strong>Significance:</strong> Helped avoid a postwar depression and fueled a major expansion of the American middle class and suburban growth.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "Division of Germany & The Berlin Blockade",
-                back: "<h3>The Cold War Solidifies</h3><ul><li><strong>Division:</strong> Germany and Berlin were split into 4 Allied occupation zones. The 3 Western zones eventually unified into democratic West Germany.</li><li><strong>Berlin Blockade (1948):</strong> Stalin shut down all surface transit into West Berlin to starve out the West. The Allies bypassed it with the 11-month <strong>Berlin Airlift</strong>, forcing Stalin to lift the blockade.</li></ul>"
+                front: "The Election of 1948",
+                back: "<h3>Election of 1948</h3><ul><li><strong>Candidates:</strong> Harry S. Truman (Democrat) vs. Thomas Dewey (Republican) vs. Strom Thurmond (Dixiecrat).</li><li><strong>Significance:</strong> Truman won a surprise victory despite deep splits within the Democratic Party over his civil rights platform, defying nearly all national poll predictions.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "Containment Policy: Kennan, Truman Doctrine, Marshall Plan",
-                back: "<h3>The Strategy of Containment</h3><ul><li><strong>George Kennan:</strong> Wrote the \"Long Telegram\" outlining **Containment**—the geopolitical strategy to block the expansion of Soviet communism.</li><li><strong>Truman Doctrine (1947):</strong> Promised US military/economic aid to any free nation actively resisting communist takeover (first used in Greece/Turkey).</li><li><strong>Marshall Plan (1948):</strong> Poured billions into rebuilding Western Europe's economies to neutralize the poverty that bred communist support.</li></ul>"
+                front: "Western Economic Alliance & Division of Germany",
+                back: "<h3>Postwar Division</h3><ul><li><strong>Division of Germany:</strong> Germany and Berlin were split into four occupation zones: American, British, French, and Soviet. The three Western zones eventually merged into democratic West Germany.</li><li><strong>Western Economic Alliance:</strong> Aimed to integrate Western European economies to foster democratic stability and create a unified economic front against the Soviet bloc.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "NATO, \"Iron Curtain\", & Satellite Nations",
-                back: "<h3>Divided Europe</h3><ul><li><strong>NATO (1949):</strong> A peacetime mutual-defense military alliance between the US, Canada, and Western Europe to deter Soviet aggression.</li><li><strong>Iron Curtain:</strong> Metaphor coined by Winston Churchill describing the stark ideological/physical barrier dividing free West Europe from Soviet East Europe.</li><li><strong>Satellite Nations:</strong> Eastern European nations under absolute Soviet political control and domination.</li></ul>"
+                front: "Impact of George Kennan",
+                back: "<h3>George Kennan</h3><ul><li><strong>Who:</strong> An American diplomat stationed in Moscow who authored the "Long Telegram" in 1946.</li><li><strong>Significance:</strong> Argued that Soviet expansionism was deeply rooted and ideological. His analysis formed the basis for the policy of **Containment**, which became the guiding principle of US foreign policy throughout the Cold War.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "The Second Red Scare: HUAC & Joseph McCarthy",
-                back: "<h3>The Domestic Red Scare</h3><ul><li><strong>2nd Red Scare:</strong> Post-WWII paranoia regarding communist subversion inside the US government.</li><li><strong>HUAC:</strong> House committee that targeted suspected subversives, famously blacklisting the \"Hollywood Ten.\"</li><li><strong>Joseph McCarthy:</strong> Senator who led reckless, unsubstantiated witch-hunts against alleged communists in the State Dept (**McCarthyism**), collapsing after attacking the US Army on television.</li></ul>"
+                front: "Containment, Truman Doctrine, & Marshall Plan",
+                back: "<h3>Containment Strategy</h3><ul><li><strong>Containment:</strong> The strategy aimed at preventing the global expansion of communism.</li><li><strong>Truman Doctrine (1947):</strong> A commitment to provide economic and military aid to any nation resisting communist takeover, first applied in Greece and Turkey.</li><li><strong>Marshall Plan (1948):</strong> A multi-billion dollar economic recovery program to rebuild Western Europe, reducing the economic distress that could make communism attractive.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "Red China & The Korean War (1950–1953)",
-                back: "<h3>Asian Cold War Fronts</h3><ul><li><strong>Red China:</strong> Mao Zedong's communist forces overthrew the Nationalists in 1949, leading critics to blast Truman for \"losing China.\"</li><li><strong>Korean War:</strong> Sparked when communist North Korea invaded democratic South Korea. Truman deployed troops under a UN banner. Ended in a bitter stalemate at the original 38th Parallel boundary.</li></ul>"
+                front: "Berlin Blockade & NATO",
+                back: "<h3>Berlin Blockade & NATO</h3><ul><li><strong>Berlin Blockade (1948):</strong> Stalin cut off all ground transit to West Berlin to force the Allies out. The Allies responded with the **Berlin Airlift**, flying in supplies for 11 months until the blockade was lifted.</li><li><strong>NATO (1949):</strong> The North Atlantic Treaty Organization, a mutual-defense military alliance between the US, Canada, and Western Europe designed to deter Soviet aggression.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "Cold War Crises: Bay of Pigs, Cuban Missile Crisis, Berlin Crisis",
-                back: "<h3>Kennedy-Era Crises</h3><ul><li><strong>Bay of Pigs (1961):</strong> Disaster CIA-backed invasion of Cuba by anti-Castro exiles, humiliating JFK.</li><li><strong>Berlin Crisis (1961):</strong> East Germany erected the **Berlin Wall** to end the brain drain of citizens escaping to the democratic West.</li><li><strong>Cuban Missile Crisis (1962):</strong> 13-day nuclear standoff over Soviet missiles in Cuba. Ended when JFK blockaded Cuba, and Khrushchev pulled missiles in exchange for a US vow not to invade Cuba.</li></ul>"
+                front: "Satellite Nations & The \"Iron Curtain\"",
+                back: "<h3>The Divided Continent</h3><ul><li><strong>Satellite Nations:</strong> Countries in Eastern Europe that were theoretically independent but remained under total political and economic control by the Soviet Union.</li><li><strong>Iron Curtain:</strong> A metaphor popularized by Winston Churchill in 1946 to describe the division between democratic Western Europe and communist Eastern Europe.</li></ul>"
             },
             {
                 unit: "coldwar",
-                front: "The Nuclear Arms Race",
-                back: "<h3>The Arms Race</h3><ul><li><strong>What:</strong> High-stakes competition for nuclear dominance between the US and USSR.</li><li><strong>Milestones:</strong> Soviet atomic bomb (1949), US Hydrogen bomb (1952), and Intercontinental Ballistic Missiles (ICBMs). Stabilized under the chilling doctrine of Mutually Assured Destruction (MAD).</li></ul>"
+                front: "2nd Red Scare: Joseph McCarthy & HUAC",
+                back: "<h3>The Second Red Scare</h3><ul><li><strong>HUAC:</strong> House Un-American Activities Committee; investigated alleged communist subversion within American society, famously blacklisting the "Hollywood Ten."</li><li><strong>Joseph McCarthy:</strong> A Republican Senator who led aggressive, unsupported investigations into alleged communist infiltration of the State Department. This practice became known as **McCarthyism** and collapsed after he targeted the US Army on live television.</li></ul>"
+            },
+            {
+                unit: "coldwar",
+                front: "Red China & Truman",
+                back: "<h3>The \"Loss\" of China (1949)</h3><ul><li><strong>What:</strong> Mao Zedong's communist forces defeated Jiang Jieshi's US-backed Nationalists, establishing the People's Republic of China.</li><li><strong>Significance:</strong> Domestic critics blamed President Truman for the "loss of China," intensifying the Red Scare and putting pressure on the administration to take a firmer stance against communism in Asia.</li></ul>"
+            },
+            {
+                unit: "coldwar",
+                front: "The Korean War",
+                back: "<h3>The Korean War (1950–1953)</h3><ul><li><strong>What:</strong> Triggered when communist North Korea launched an invasion across the 38th Parallel into South Korea. The US led a UN coalition to contain the invasion.</li><li><strong>Significance:</strong> Marked the first major military conflict of the Cold War. It included Truman's firing of General MacArthur for insubordination and ended in an armistice that preserved the original border at the 38th Parallel.</li></ul>"
+            },
+            {
+                unit: "coldwar",
+                front: "Bay of Pigs, Cuban Missile Crisis, & Berlin Crisis",
+                back: "<h3>Cold War Flashpoints</h3><ul><li><strong>Bay of Pigs (1961):</strong> A failed, CIA-backed invasion of Cuba by anti-Castro exiles that embarrassed the Kennedy administration.</li><li><strong>Berlin Crisis (1961):</strong> The Soviet construction of the Berlin Wall to stop East Germans from fleeing to the West.</li><li><strong>Cuban Missile Crisis (1962):</strong> A 13-day nuclear standoff over Soviet missiles in Cuba. Resolved when JFK enacted a naval blockade, and the USSR removed the missiles in exchange for a US promise not to invade Cuba.</li></ul>"
+            },
+            {
+                unit: "coldwar",
+                front: "The Arms Race",
+                back: "<h3>The Arms Race</h3><ul><li><strong>What:</strong> The competition between the US and USSR for nuclear superiority.</li><li><strong>Key Milestones:</strong> Included the Soviet detonation of an atomic bomb (1949), the development of the Hydrogen Bomb (1952), and the deployment of ICBMs. This rapid expansion led to the strategic doctrine of Mutually Assured Destruction (MAD).</li></ul>"
             },
 
-            // UNIT 5: THE CIVIL RIGHTS MOVEMENT
+            // --- THE CIVIL RIGHTS MOVEMENT ---
             {
                 unit: "civilrights",
-                front: "Brown v. Board of Education (1954)",
-                back: "<h3>Brown v. Board of Ed</h3><ul><li><strong>The Case:</strong> Combined class-actions argued by NAACP lawyer <strong>Thurgood Marshall</strong> on behalf of <strong>Linda & Oliver Brown</strong>.</li><li><strong>Ruling:</strong> Chief Justice <strong>Earl Warren</strong> led a unanimous court ruling that \"separate educational facilities are inherently unequal,\" reversing *Plessy v. Ferguson*.</li></ul>"
+                front: "Brown v. Board of Education, Linda Brown, & Oliver Brown",
+                back: "<h3>Brown v. Board of Education (1954)</h3><ul><li><strong>The Case:</strong> A collection of school segregation cases brought on behalf of **Linda Brown** by her father **Oliver Brown**.</li><li><strong>Significance:</strong> The Supreme Court issued a unanimous ruling that declared separate educational facilities are inherently unequal. This decision officially overturned the "separate but equal" doctrine established in *Plessy v. Ferguson*.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "The Little Rock Nine (1957)",
-                back: "<h3>The Little Rock Nine</h3><ul><li><strong>What:</strong> Nine Black students enrolled at Central High School in Little Rock, Arkansas to test integration.</li><li><strong>Crisis:</strong> Governor Faubus ordered the National Guard to block entry. President Eisenhower asserted federal supremacy by sending the 101st Airborne Division to guard and escort the students.</li></ul>"
+                front: "Thurgood Marshall & Earl Warren",
+                back: "<h3>Marshall & Warren</h3><ul><li><strong>Thurgood Marshall:</strong> The lead legal counsel for the NAACP who successfully argued the *Brown* case before the Supreme Court; he later became the first African American Supreme Court Justice.</li><li><strong>Earl Warren:</strong> The Chief Justice of the Supreme Court who unified the court to ensure a unanimous 9-0 ruling in the *Brown* decision, helping to reinforce its legal authority.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "Emmett Till & The Montgomery Bus Boycott",
-                back: "<h3>Sparks of the Movement</h3><ul><li><strong>Emmett Till (1955):</strong> 14-year-old Black youth lynched in Mississippi. His mother's open-casket funeral exposed Southern brutality and galvanized the nation.</li><li><strong>Montgomery Bus Boycott:</strong> Triggered by Rosa Parks. <strong>Martin Luther King, Jr.</strong> led a 381-day nonviolent city bus boycott, successfully winning integration.</li></ul>"
+                front: "The Little Rock 9",
+                back: "<h3>The Little Rock Nine (1957)</h3><ul><li><strong>What:</strong> A group of nine African American students who enrolled at the all-white Central High School in Little Rock, Arkansas.</li><li><strong>Crisis:</strong> Governor Orval Faubus deployed the Arkansas National Guard to block the students from entering. In response, President Eisenhower placed the National Guard under federal control and sent the 101st Airborne Division to escort and protect the students.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "Civil Rights Direct Action: Sit-ins & Freedom Riders",
-                back: "<h3>Direct Action Strategies</h3><ul><li><strong>Sit-ins (1960):</strong> Commenced by Black college students at a lunch counter in Greensboro, NC, rapidly spreading nationwide to integrate public spaces.</li><li><strong>Freedom Riders (1961):</strong> Interracial activists organized by CORE who rode buses deep into the South to fight segregation. They met firebombs and riots, forcing federal intervention.</li></ul>"
+                front: "Emmett Till",
+                back: "<h3>Emmett Till (1955)</h3><ul><li><strong>What:</strong> A 14-year-old African American boy from Chicago who was kidnapped and murdered in Mississippi for allegedly whistling at a white woman.</li><li><strong>Significance:</strong> His mother, Mamie Till-Mobley, held an open-casket funeral in Chicago to expose the brutality of Southern racism. The media coverage galvanized the early Civil Rights Movement.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "Campaign Highlights: Birmingham & March on Washington (1963)",
-                back: "<h3>1963: Climax of the Movement</h3><ul><li><strong>Birmingham Campaign:</strong> MLK led marches where Police Chief Bull Connor unleashed attack dogs and high-pressure fire hoses on youth, shocking TV audiences.</li><li><strong>March on Washington:</strong> 250,000 gathered at the Lincoln Memorial for jobs/freedom, serving as the stage for MLK's immortal \"I Have a Dream\" speech.</li></ul>"
+                front: "Montgomery Bus Strike & Martin Luther King, Jr.",
+                back: "<h3>Montgomery Bus Boycott (1955–56)</h3><ul><li><strong>What:</strong> A 381-day protest against segregated seating on municipal buses, sparked by the arrest of Rosa Parks.</li><li><strong>Significance:</strong> Dr. Martin Luther King, Jr. emerged as a prominent national leader of the movement. The protest used nonviolent economic pressure and resulted in a Supreme Court ruling that desegregated public transportation.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "Freedom Summer & Landmark Legislation",
-                back: "<h3>The Legislative Victories</h3><ul><li><strong>Freedom Summer (1964):</strong> Aggressive Black voter registration drive in Mississippi met with deadly white supremacist violence.</li><li><strong>Civil Rights Act of 1964:</strong> Signed by LBJ; banned discrimination/segregation in employment and public accommodations.</li><li><strong>Voting Rights Act of 1965:</strong> Permanently outlawed literacy tests and sent federal registrars to the South.</li></ul>"
+                front: "Sit-ins & Freedom Riders",
+                back: "<h3>Nonviolent Direct Action</h3><ul><li><strong>Sit-ins:</strong> A protest movement that began with four Black college students at a Woolworth's lunch counter in Greensboro, NC. It spread across the South to desegregate commercial spaces.</li><li><strong>Freedom Riders (1961):</strong> Interracial groups of activists organized by CORE who rode interstate buses into the Deep South to challenge illegal segregation. They faced significant violence, which drew federal intervention.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "JFK & LBJ on Civil Rights",
-                back: "<h3>The Presidencies & Civil Rights</h3><ul><li><strong>John F. Kennedy:</strong> Acted cautiously at first to preserve Southern Democratic votes, but eventually labeled civil rights a \"moral issue\" and drafted the major Civil Rights Bill.</li><li><strong>Lyndon B. Johnson:</strong> Leveraged his deep legislative mastery and the shock of JFK's assassination to drive the historic 1964 and 1965 acts through Congress.</li></ul>"
+                front: "Birmingham, Alabama (1963) & March on Washington",
+                back: "<h3>Climax of 1963</h3><ul><li><strong>Birmingham Campaign:</strong> Protests led by the SCLC that met with a violent response from Public Safety Commissioner Bull Connor, who used attack dogs and fire hoses against marchers. The televised footage shocked audiences nationwide.</li><li><strong>March on Washington:</strong> A gathering of over 250,000 demonstrators at the Lincoln Memorial advocating for civil rights legislation, where Dr. King delivered his "I Have a Dream" speech.</li></ul>"
             },
             {
                 unit: "civilrights",
-                front: "Civil Rights Organizations",
-                back: "<h3>Key Organizations</h3><ul><li><strong>NAACP:</strong> Focused on tearing down segregation through landmark court battles.</li><li><strong>SCLC:</strong> Led by MLK; united Southern Black churches for nonviolent mass movements.</li><li><strong>SNCC:</strong> Student grass-roots alliance organizing sit-ins and voter campaigns.</li><li><strong>CORE:</strong> Famous for organizing the historic Freedom Rides.</li><li><strong>MFDP:</strong> Challenged Mississippi's all-white regular delegation at the 1964 DNC.</li></ul>"
+                front: "Freedom Summer & MFDP",
+                back: "<h3>Mississippi Mobilization (1964)</h3><ul><li><strong>Freedom Summer:</strong> A voter registration campaign in Mississippi that faced violent resistance from white supremacist groups, including the murders of three civil rights workers.</li><li><strong>MFDP:</strong> The Mississippi Freedom Democratic Party, organized by Fannie Lou Hamer to challenge the state's all-white regular delegation at the 1964 Democratic National Convention.</li></ul>"
+            },
+            {
+                unit: "civilrights",
+                front: "JFK, LBJ, & Landmark Legislation",
+                back: "<h3>The Executive and Legislation</h3><ul><li><strong>John F. Kennedy:</strong> Initially acted cautiously but later defined civil rights as a "moral issue" and proposed a comprehensive civil rights bill shortly before his assassination.</li><li><strong>Lyndon B. Johnson:</strong> Used his legislative experience to push the bill through Congress, signing the **Civil Rights Act of 1964** (banning segregation in public accommodations) and the **Voting Rights Act of 1965** (outlawing literacy tests).</li></ul>"
+            },
+            {
+                unit: "civilrights",
+                front: "Civil Rights Organizations: NAACP, CORE, SCLC, SNCC",
+                back: "<h3>The Organizations</h3><ul><li><strong>NAACP:</strong> Focused primarily on legal challenges and courtroom strategies to dismantle segregation.</li><li><strong>SCLC:</strong> Led by Dr. King; coordinated nonviolent mass protests through Southern churches.</li><li><strong>SNCC:</strong> A student-led organization focused on grassroots community organizing, sit-ins, and voter registration drives.</li><li><strong>CORE:</strong> Famous for organizing the Freedom Rides to challenge segregation on interstate transit.</li></ul>"
             },
 
-            // UNIT 6: THE VIETNAM WAR & THE 1960s
+            // --- THE VIETNAM WAR & THE 1960s ---
             {
                 unit: "vietnam",
-                front: "The Domino Theory & Early US Policy",
-                back: "<h3>The Origins of Vietnam</h3><ul><li><strong>The French:</strong> Fought to preserve colonial rule over Indochina but were routed at Dien Bien Phu (1954).</li><li><strong>Domino Theory:</strong> US doctrine warning that if one Asian nation fell to communism, surrounding nations would follow.</li><li><strong>Eisenhower's Policy:</strong> Backed anti-communist South Vietnam under <strong>Ngo Dinh Diem</strong> with cash and military advisers.</li></ul>"
+                front: "Role of the French in Vietnam & The Domino Theory",
+                back: "<h3>Origins of US Involvement</h3><ul><li><strong>The French:</strong> Fought to regain colonial control of French Indochina after WWII. They were defeated by Ho Chi Minh's nationalist forces at Dien Bien Phu in 1954.</li><li><strong>Domino Theory:</strong> The geopolitical theory that if one nation fell to communism, its neighboring countries would inevitably fall as well. This concept drove US intervention in the region.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "JFK vs. LBJ Vietnam Policy",
-                back: "<h3>Escalation of the War</h3><ul><li><strong>Kennedy's Policy:</strong> Expanded military advisers to over 16,000 and implicitly accepted the coup/assassination of the corrupt Ngo Dinh Diem.</li><li><strong>Johnson's Policy:</strong> Massive military escalation following the <strong>Gulf of Tonkin Resolution (1964)</strong>, which handed the president a blank check to conduct full war without congressional declaration.</li></ul>"
+                front: "Ho Chi Minh & Ngo Dinh Diem",
+                back: "<h3>The Divided Leaders</h3><ul><li><strong>Ho Chi Minh:</strong> The communist revolutionary leader of North Vietnam who sought a unified, independent Vietnam.</li><li><strong>Ngo Dinh Diem:</strong> The anti-communist, authoritarian President of South Vietnam who was backed by the US but faced growing unpopularity due to corruption and his treatment of Buddhists.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "Nature of the Warfare: Vietcong, Ho Chi Minh Trail, & Defoliants",
-                back: "<h3>The Jungle War</h3><ul><li><strong>Vietcong (VC):</strong> South Vietnamese communist guerrillas relying on stealth, ambushes, and expansive tunnel systems.</li><li><strong>Ho Chi Minh Trail:</strong> Hidden military corridor tracing through Laos and Cambodia, routing North Vietnamese supplies south.</li><li><strong>Agent Orange:</strong> Toxic chemical defoliant sprayed to strip the dense jungle canopies hiding enemy troops, causing systemic health problems later.</li></ul>"
+                front: "Eisenhower's & Kennedy’s Vietnam Policy",
+                back: "<h3>Early Presidential Policies</h3><ul><li><strong>Eisenhower:</strong> Introduced the Domino Theory and sent economic aid and military advisers to support the newly formed South Vietnamese government.</li><li><strong>Kennedy:</strong> Increased the number of military advisers to over 16,000 and approved the military coup that resulted in the overthrow and assassination of Ngo Dinh Diem.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "The Tet Offensive (1968)",
-                back: "<h3>The Turning Point: Tet</h3><ul><li><strong>What:</strong> A massive surprise attack by the VC and North Vietnamese army hitting dozens of South Vietnamese cities during the Lunar New Year.</li><li><strong>Significance:</strong> A military loss for communists, but a fatal psychological blow to the US. It broke the \"credibility gap,\" exposing that the government was lying about a near victory and turning public opinion.</li></ul>"
+                front: "Johnson’s Vietnam Policy & Gulf of Tonkin Resolution",
+                back: "<h3>LBJ's Escalation</h3><ul><li><strong>Policy:</strong> Dramatically escalated the conflict into a full-scale American war.</li><li><strong>Gulf of Tonkin Resolution (1964):</strong> Passed by Congress after reports of a naval encounter involving US destroyers. It gave the president broad authority to use military force in Southeast Asia without a formal declaration of war.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "Nixon's Vietnam Policy & Escalation",
-                back: "<h3>Nixon & Vietnamization</h3><ul><li><strong>Vietnamization:</strong> Plan to draw down American ground troops and transition combat operations over to the South Vietnamese army.</li><li><strong>Escalation:</strong> Secretly expanded the war by invading/bombing neutral Cambodia/Laos to destroy supply paths and ordered the heavy mining of <strong>Haiphong Harbor</strong>.</li></ul>"
+                front: "The Vietcong & The Ho Chi Minh Trail",
+                back: "<h3>The Guerrilla Conflict</h3><ul><li><strong>Vietcong (VC):</strong> Communist guerrilla fighters operating within South Vietnam who relied on ambush tactics, local support, and underground tunnel networks.</li><li><strong>Ho Chi Minh Trail:</strong> A network of supply routes running from North Vietnam through neutral Laos and Cambodia into South Vietnam, used to transport troops and supplies.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "Domestic Anti-War Protest: Draft, Kent State, The Wall",
-                back: "<h3>The Fractured Homefront</h3><ul><li><strong>The Draft:</strong> Main target of protest since college deferments exempted wealthy youths, leaving a disproportionate burden on working-class/minority men.</li><li><strong>Kent State (1970):</strong> National Guardsmen shot into an anti-war crowd protesting the Cambodian invasion, killing 4 students.</li><li><strong>The Wall:</strong> The Vietnam Veterans Memorial built in D.C. (1982) to foster national reconciliation.</li></ul>"
+                front: "Herbicides (Agent Orange)",
+                back: "<h3>Herbicides & Agent Orange</h3><ul><li><strong>What:</strong> Chemical defoliants sprayed by the US military over rural areas of South Vietnam.</li><li><strong>Why:</strong> Intended to strip away the thick jungle canopy used as cover by guerrilla forces and disrupt enemy food supplies.</li><li><strong>Consequences:</strong> Caused extensive environmental damage and led to serious, long-term health issues for both Vietnamese civilians and returning veterans.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "Political Fallout: Pentagon Papers & War Powers Act",
-                back: "<h3>Loss of Institutional Trust</h3><ul><li><strong>Pentagon Papers (1971):</strong> Leaked top-secret military studies proving successive presidents systematically lied to the public regarding Vietnam operations.</li><li><strong>War Powers Act (1973):</strong> Legislation overrode Nixon's veto; forced presidents to inform Congress within 48 hours of deploying troops, limiting unauthorized stays to 60 days.</li></ul>"
+                front: "The Tet Offensive",
+                back: "<h3>The Tet Offensive (1968)</h3><ul><li><strong>What:</strong> A coordinated surprise attack launched by the Vietcong and North Vietnamese forces against dozens of cities and military bases across South Vietnam during the Lunar New Year.</li><li><strong>Significance:</strong> While a tactical military victory for the US, it proved to be a major psychological defeat. It widened the "credibility gap" by showing the American public that the war was not close to an end, turning public opinion against the conflict.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "Presidential Legacies: Ford/Carter Context & LBJ's Great Society",
-                back: "<h3>Domestic Fallout</h3><ul><li><strong>The Great Society:</strong> LBJ's sweeping domestic war on poverty and injustice (Medicare, Medicaid). It was completely starved of funding and destroyed by the costs of Vietnam.</li><li><strong>Ford & Carter:</strong> Ford presided over the final fall of Saigon (1975). Carter later issued universal pardons to draft evaders to heal national divisions.</li></ul>"
+                front: "Nixon’s Policy & Vietnamization",
+                back: "<h3>Nixon & Vietnamization</h3><ul><li><strong>Vietnamization:</strong> President Nixon's strategy to gradually withdraw US ground troops and transfer combat responsibilities to the South Vietnamese army.</li><li><strong>Escalation:</strong> While drawing down troops, Nixon expanded the air war by authorizing secret bombing campaigns and ground incursions into neutral Cambodia and Laos to target supply lines.</li></ul>"
+            },
+            {
+                unit: "vietnam",
+                front: "Haiphong Harbor & The Draft",
+                back: "<h3>War Operations and Domestic Pressures</h3><ul><li><strong>Haiphong Harbor:</strong> Nixon ordered the mining of North Vietnam's primary port in 1972 to disrupt Soviet and Chinese supply shipments.</li><li><strong>The Draft:</strong> A major catalyst for the anti-war movement. Critics argued the system disproportionately affected working-class and minority men, as wealthier individuals could secure college deferments.</li></ul>"
+            },
+            {
+                unit: "vietnam",
+                front: "Domestic Protest: Kent State & The Wall",
+                back: "<h3>Protest and Remembrance</h3><ul><li><strong>Kent State (1970):</strong> Ohio National Guardsmen opened fire during an anti-war demonstration protesting the invasion of Cambodia, killing four students and wounding nine.</li><li><strong>The Wall:</strong> The Vietnam Veterans Memorial, dedicated in Washington D.C. in 1982 to honor service members and encourage national healing.</li></ul>"
+            },
+            {
+                unit: "vietnam",
+                front: "Pentagon Papers & War Powers Act",
+                back: "<h3>Institutional Checks</h3><ul><li><strong>Pentagon Papers (1971):</strong> Leaked top-secret Department of Defense documents published by the press, revealing that the government had consistently misled Congress and the public regarding the scope of operations in Vietnam.</li><li><strong>War Powers Act (1973):</strong> A law passed over Nixon's veto that required the president to notify Congress within 48 hours of deploying military forces abroad and limited unauthorized deployments to 60 days.</li></ul>"
+            },
+            {
+                unit: "vietnam",
+                front: "Ford/Carter Context & The Great Society",
+                back: "<h3>Wider Legacies</h3><ul><li><strong>Great Society:</strong> LBJ's ambitious domestic policy agenda aimed at expanding social programs and reducing poverty. Its funding was significantly reduced due to the rising costs of the Vietnam War.</li><li><strong>Ford/Carter:</strong> President Ford oversaw the final evacuation of Saigon as South Vietnam fell to communist forces in 1975. President Carter later issued unconditional pardons to individuals who had evaded the Vietnam draft.</li></ul>"
             },
             {
                 unit: "vietnam",
                 front: "The Election of 1968",
-                back: "<h3>The Election of 1968</h3><ul><li><strong>Context:</strong> Deeply turbulent year marked by the Tet Offensive, the assassinations of MLK and RFK, and police riots against anti-war protestors at the Chicago DNC.</li><li><strong>Outcome:</strong> Republican <strong>Richard Nixon</strong> won, appealing to a \"Silent Majority\" with promises of \"law and order\" at home and \"peace with honor\" in Vietnam.</li></ul>"
+                back: "<h3>The Election of 1968</h3><ul><li><strong>Context:</strong> A turbulent election year marked by the Tet Offensive, the assassinations of Martin Luther King Jr. and Robert F. Kennedy, and anti-war protests at the Democratic National Convention in Chicago.</li><li><strong>Outcome:</strong> Republican Richard Nixon won the presidency by appealing to the "Silent Majority" with promises to restore order at home and achieve "peace with honor" in Vietnam.</li></ul>"
             },
             {
                 unit: "vietnam",
-                front: "The Watergate Scandal (1972–1974)",
-                back: "<h3>The Watergate Scandal</h3><ul><li><strong>What:</strong> A botched break-in at the DNC headquarters at the Watergate complex, followed by an aggressive, criminal cover-up orchestrated by President Nixon.</li><li><strong>Consequences:</strong> The unearthing of Nixon's secret tape system proved he ordered the cover-up. Facing certain impeachment and removal, Nixon resigned on August 9, 1974, destroying public faith in the presidency.</li></ul>"
+                front: "The Watergate Scandal",
+                back: "<h3>The Watergate Scandal (1927–1974)</h3><ul><li><strong>What:</strong> A political scandal involving a break-in at the Democratic National Committee headquarters at the Watergate complex and subsequent cover-up efforts by President Nixon and his staff.</li><li><strong>Consequences:</strong> The discovery of secret White House audio tapes confirmed Nixon's involvement in the cover-up. Facing certain impeachment and removal from office, Nixon resigned on August 9, 1974.</li></ul>"
             }
         ];
 
@@ -616,7 +697,7 @@
 
         function updateCard() {
             if (currentCards.length === 0) {
-                frontText.textContent = "No cards available in this unit.";
+                frontText.textContent = "No cards available under this selection.";
                 backText.innerHTML = "";
                 counterElement.textContent = "0 / 0";
                 prevBtn.disabled = true;
@@ -626,7 +707,6 @@
 
             cardElement.classList.remove('is-flipped');
             
-            // Wait for flip back animation before changing text
             setTimeout(() => {
                 frontText.textContent = currentCards[currentIndex].front;
                 backText.innerHTML = currentCards[currentIndex].back;
@@ -644,7 +724,7 @@
         }
 
         function nextCard(event) {
-            event.stopPropagation(); // Stop card from flipping when clicking button
+            event.stopPropagation(); 
             if (currentIndex < currentCards.length - 1) {
                 currentIndex++;
                 updateCard();
@@ -652,7 +732,7 @@
         }
 
         function prevCard(event) {
-            event.stopPropagation(); // Stop card from flipping when clicking button
+            event.stopPropagation(); 
             if (currentIndex > 0) {
                 currentIndex--;
                 updateCard();
@@ -673,10 +753,8 @@
             updateCard();
         }
 
-        // Initialize first view
         updateCard();
 
-        // Keyboard navigation support
         document.addEventListener('keydown', (e) => {
             if (e.key === ' ' || e.key === 'Spacebar') {
                 e.preventDefault();
